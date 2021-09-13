@@ -1,5 +1,19 @@
 # Changelog
 
+### [0.3.2](https://www.github.com/googleapis/java-policy-troubleshooter/compare/v0.3.1...v0.3.2) (2021-08-23)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.1.0 ([#93](https://www.github.com/googleapis/java-policy-troubleshooter/issues/93)) ([4159b8f](https://www.github.com/googleapis/java-policy-troubleshooter/commit/4159b8f04d245b557808281e07acce07ce421c09))
+
+### [0.3.1](https://www.github.com/googleapis/java-policy-troubleshooter/compare/v0.3.0...v0.3.1) (2021-08-12)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.0.1 ([#87](https://www.github.com/googleapis/java-policy-troubleshooter/issues/87)) ([f79a018](https://www.github.com/googleapis/java-policy-troubleshooter/commit/f79a01808a49f5839435dbafdec4245ea296a3cc))
+
 ## [0.3.0](https://www.github.com/googleapis/java-policy-troubleshooter/compare/v0.2.1...v0.3.0) (2021-08-06)
 
 
