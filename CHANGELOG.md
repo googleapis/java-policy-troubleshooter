@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.6](https://github.com/googleapis/java-policy-troubleshooter/compare/v1.2.5...v1.2.6) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([56379be](https://github.com/googleapis/java-policy-troubleshooter/commit/56379bedeb4ebe84b4e6254d13a7a88cc30e4f49))
+
 ## [1.2.5](https://github.com/googleapis/java-policy-troubleshooter/compare/v1.2.4...v1.2.5) (2022-10-03)
 
 
