@@ -16,31 +16,26 @@
 
 package com.google.cloud.policytroubleshooter.v1.samples;
 
-// [START policytroubleshooter_v1_generated_iamcheckerclient_troubleshootiampolicy_sync]
+// [START policytroubleshooter_v1_generated_IamChecker_Create_SetEndpoint_sync]
 import com.google.cloud.policytroubleshooter.v1.IamCheckerClient;
-import com.google.cloud.policytroubleshooter.v1.TroubleshootIamPolicyRequest;
-import com.google.cloud.policytroubleshooter.v1.TroubleshootIamPolicyResponse;
-import google.cloud.policytroubleshooter.v1.Explanations;
+import com.google.cloud.policytroubleshooter.v1.IamCheckerSettings;
+import com.google.cloud.policytroubleshooter.v1.myEndpoint;
 
-public class SyncTroubleshootIamPolicy {
+public class SyncCreateSetEndpoint {
 
   public static void main(String[] args) throws Exception {
-    syncTroubleshootIamPolicy();
+    syncCreateSetEndpoint();
   }
 
-  public static void syncTroubleshootIamPolicy() throws Exception {
+  public static void syncCreateSetEndpoint() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    try (IamCheckerClient iamCheckerClient = IamCheckerClient.create()) {
-      TroubleshootIamPolicyRequest request =
-          TroubleshootIamPolicyRequest.newBuilder()
-              .setAccessTuple(Explanations.AccessTuple.newBuilder().build())
-              .build();
-      TroubleshootIamPolicyResponse response = iamCheckerClient.troubleshootIamPolicy(request);
-    }
+    IamCheckerSettings iamCheckerSettings =
+        IamCheckerSettings.newBuilder().setEndpoint(myEndpoint).build();
+    IamCheckerClient iamCheckerClient = IamCheckerClient.create(iamCheckerSettings);
   }
 }
-// [END policytroubleshooter_v1_generated_iamcheckerclient_troubleshootiampolicy_sync]
+// [END policytroubleshooter_v1_generated_IamChecker_Create_SetEndpoint_sync]

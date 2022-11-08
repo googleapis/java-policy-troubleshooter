@@ -16,7 +16,7 @@
 
 package com.google.cloud.policytroubleshooter.v1.samples;
 
-// [START policytroubleshooter_v1_generated_iamcheckerclient_create_setcredentialsprovider_sync]
+// [START policytroubleshooter_v1_generated_IamChecker_Create_SetCredentialsProvider_sync]
 import com.google.api.gax.core.FixedCredentialsProvider;
 import com.google.cloud.policytroubleshooter.v1.IamCheckerClient;
 import com.google.cloud.policytroubleshooter.v1.IamCheckerSettings;
@@ -41,4 +41,4 @@ public class SyncCreateSetCredentialsProvider {
     IamCheckerClient iamCheckerClient = IamCheckerClient.create(iamCheckerSettings);
   }
 }
-// [END policytroubleshooter_v1_generated_iamcheckerclient_create_setcredentialsprovider_sync]
+// [END policytroubleshooter_v1_generated_IamChecker_Create_SetCredentialsProvider_sync]

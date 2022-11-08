@@ -16,35 +16,24 @@
 
 package com.google.cloud.policytroubleshooter.v1.samples;
 
-// [START policytroubleshooter_v1_generated_iamcheckerclient_troubleshootiampolicy_async]
-import com.google.api.core.ApiFuture;
+// [START policytroubleshooter_v1_generated_IamChecker_Create_SetCredentialsProvider1_sync]
 import com.google.cloud.policytroubleshooter.v1.IamCheckerClient;
-import com.google.cloud.policytroubleshooter.v1.TroubleshootIamPolicyRequest;
-import com.google.cloud.policytroubleshooter.v1.TroubleshootIamPolicyResponse;
-import google.cloud.policytroubleshooter.v1.Explanations;
+import com.google.cloud.policytroubleshooter.v1.IamCheckerSettings;
 
-public class AsyncTroubleshootIamPolicy {
+public class SyncCreateSetCredentialsProvider1 {
 
   public static void main(String[] args) throws Exception {
-    asyncTroubleshootIamPolicy();
+    syncCreateSetCredentialsProvider1();
   }
 
-  public static void asyncTroubleshootIamPolicy() throws Exception {
+  public static void syncCreateSetCredentialsProvider1() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    try (IamCheckerClient iamCheckerClient = IamCheckerClient.create()) {
-      TroubleshootIamPolicyRequest request =
-          TroubleshootIamPolicyRequest.newBuilder()
-              .setAccessTuple(Explanations.AccessTuple.newBuilder().build())
-              .build();
-      ApiFuture<TroubleshootIamPolicyResponse> future =
-          iamCheckerClient.troubleshootIamPolicyCallable().futureCall(request);
-      // Do something.
-      TroubleshootIamPolicyResponse response = future.get();
-    }
+    IamCheckerSettings iamCheckerSettings = IamCheckerSettings.newHttpJsonBuilder().build();
+    IamCheckerClient iamCheckerClient = IamCheckerClient.create(iamCheckerSettings);
   }
 }
-// [END policytroubleshooter_v1_generated_iamcheckerclient_troubleshootiampolicy_async]
+// [END policytroubleshooter_v1_generated_IamChecker_Create_SetCredentialsProvider1_sync]
